@@ -1,28 +1,40 @@
-# DevOps Projects
+# Dockerfile for Hosting 2048 Game with Nginx
 
-This repository contains various DevOps projects that showcase my skills and experience in implementing DevOps practices and tools for efficient software development and deployment.
+<div align="center">
+    <img src="https://image.freepik.com/free-vector/pixel-art-retro-game-background_33099-444.jpg" alt="2048 Game" width="300"/>
+</div>
 
-## Projects
-
-### Project 1: 2048 Game
-- **Description:** The Dockerfile in this repository allows you to host the 2048 game using Nginx as the web server. By building and running the Docker image, you can easily set up the game on your local machine. The provided usage instructions guide you through building the image and running the container. Enjoy playing the 2048 game by accessing it in your web browser at [http://localhost](http://localhost).
-
-### Project 2: CI/CD Pipeline with Jenkins
-- **Description:** Created a robust CI/CD pipeline using Jenkins, Git, Docker, and Maven. The pipeline automated the build, testing, and deployment processes, ensuring continuous integration and delivery of software.
-- **Technologies:** Jenkins, Git, Docker, Maven
+<p align="center">
+    <em>Build and run the Docker image to host the 2048 game using Nginx.</em>
+</p>
 
 ## Usage
-- Clone this repository or download the desired project.
-- Navigate to the project directory to access project-specific instructions and resources.
-- Follow the provided documentation and setup guidelines to run and explore each project.
 
-## Contributions
-Contributions and suggestions for improvement are welcome! If you have any ideas or want to collaborate, feel free to open an issue or submit a pull request.
+### Prerequisites
+- Docker installed on your machine
 
-## License
-This repository is licensed under the MIT License. Feel free to use the code and resources provided here for your own projects.
+### Building the Docker Image
+1. Clone this repository or create a new directory and navigate to it.
+2. Copy the contents of the provided Dockerfile into a new file named `Dockerfile` in your project directory.
+3. Open your terminal and navigate to the project directory.
+4. Build the Docker image by running the following command:
+   ```shell
+   docker build -t 2048-game .
+   ```
 
-## About the Author
-This repository is maintained by Madhan, a DevOps engineer with 1 year of experience in implementing DevOps practices and tools for efficient software development and deployment. Connect with me on [LinkedIn](https://www.linkedin.com/in/madhan-c-3b325214a) to discuss any collaboration or opportunities.
+### Running the Container
+1. Once the image is successfully built, run the Docker container using the following command:
+   ```shell
+   docker run -d -p 80:80 2048-game
+   ```
+   This command starts the container and maps the host machine's port 80 to the container's port 80.
+2. Access the 2048 game by opening a web browser and navigating to `http://localhost`.
 
-Let's embrace the power of DevOps and streamline software delivery together!
+## Credits
+
+- The 2048 game repository used in this Dockerfile is available at: [https://github.com/gabrielecirulli/2048](https://github.com/gabrielecirulli/2048)
+- Nginx is an open-source web server and can be found at: [https://www.nginx.com/](https://www.nginx.com/)
+
+<div align="center">
+    <em>Enjoy playing the 2048 game in your Docker container!</em>
+</div>
