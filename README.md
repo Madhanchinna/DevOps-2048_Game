@@ -1,7 +1,9 @@
 # Dockerfile for Hosting 2048 Game with Nginx
 
 <div align="center">
-    <img src="https://image.freepik.com/free-vector/pixel-art-retro-game-background_33099-444.jpg" alt="2048 Game" width="300"/>
+    <img src="https://th.bing.com/th/id/R.5505d35f42d741bfae69b98781a3ef6e?rik=gkIhyhElT0g%2bEg&riu=http%3a%2f%2fmiplet.net%2fimages%2f2048win.png&ehk=5k%2bTzWr7xAFif2QfcQWR8eSxVlFcEeiq%2fThHFovTIcQ%3d&risl=&pid=ImgRaw&r=0" alt="2048 Game" width="300"/>
+    <!-- https://image.freepik.com/free-vector/pixel-art-retro-game-background_33099-444.jpg -->
+
 </div>
 
 <p align="center">
